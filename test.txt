@@ -1,0 +1,52 @@
+@{
+    ViewBag.Title = "DisplayList";
+}
+
+<h2>List </h2>
+
+<table id="ListTest" class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Product Title
+            </th>
+        </tr>
+    </thead>
+
+
+
+
+@*    @foreach (var name in ViewBag.ProductList)
+    {
+        <tr>
+            <td>
+                <a href="List/DisplayList?value=@name.productname"> @name.productname</a>
+            </td>
+        </tr>
+
+    }*@
+
+</table>
+
+@section scripts{
+    <script>
+        var table;
+        $(document).ready(function () {
+            init();
+            function init() {
+                table = $('#ListTest').DataTable({
+                    "ajax": {
+                        "url":"DisplayList/List",
+                        "columns": [
+                            { "data": "productname" }
+                        ]
+                    }
+                });
+
+            }
+
+        });
+
+
+    </script>
+}
