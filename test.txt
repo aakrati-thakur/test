@@ -9,6 +9,7 @@
         <tr>
             <th>
                 Product Title
+helooooos
             </th>
         </tr>
     </thead>
@@ -50,4 +51,9 @@
 
     </script>
 }
+<<<<<<< HEAD
 //error: DataTable is not a method
+=======
+harika
+>>>>>>> origin/master
+Hello
