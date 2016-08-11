@@ -50,3 +50,4 @@
 
     </script>
 }
+//error: DataTable is not a method
